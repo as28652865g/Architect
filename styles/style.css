@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 3rem;
   height: 3rem;
   position: fixed;
-  top: 5rem;
+  top: 3rem;
   right: 5%;
   z-index: 200;
   display: -webkit-box;
@@ -117,6 +117,18 @@ h1, h2, h3, h4, h5, h6, p {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@media (max-width: 475px) {
+  .change .hamburger-menu {
+    left: 5%;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .banner p {
+    display: none;
   }
 }
 
@@ -228,7 +240,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .banner button {
-  width: 25rem;
+  width: 22rem;
   height: 7rem;
   background-color: #c29525;
   border: none;
@@ -307,6 +319,15 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media (max-width: 1024px) {
+  .banner {
+    top: 13%;
+  }
+  .banner p {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     top: 15%;
@@ -314,6 +335,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .banner h1 {
     width: 80%;
+    font-size: 6rem;
     letter-spacing: 0;
   }
   .banner p {
@@ -323,7 +345,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 400px) {
   .banner h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .banner p {
     font-size: 3rem;
@@ -333,9 +355,9 @@ h1, h2, h3, h4, h5, h6, p {
 .sidebar {
   width: 40rem;
   height: 100vh;
+  right: -40rem;
   position: fixed;
   top: 0;
-  right: -40rem;
   background-color: #fff;
   -webkit-transition: right .3s;
   transition: right .3s;
@@ -356,6 +378,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu .menu-item {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .menu .menu-item .menu-link {
@@ -368,7 +391,6 @@ h1, h2, h3, h4, h5, h6, p {
 .menu .menu-item .menu-link::before {
   content: attr(data-content);
   position: absolute;
-  top: 0;
   left: 0;
   color: #c29525;
   width: 0;
@@ -1019,7 +1041,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .scroll-btn {
   position: fixed;
-  right: 5rem;
+  right: 5%;
   bottom: 5rem;
   width: 4.5rem;
   height: 4.5rem;
@@ -1040,14 +1062,5 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: .3rem;
   -webkit-animation: up-and-down 2s infinite;
           animation: up-and-down 2s infinite;
-}
-
-@media (max-width: 768px) {
-  .scroll-btn {
-    right: 2rem;
-    bottom: 2rem;
-    width: 3rem;
-    height: 3rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */
